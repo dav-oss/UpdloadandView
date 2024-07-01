@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
+    <title>Upload Image</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-16 rounded shadow-md">
+      <h1 class="text-2xl font-bold mb-4 text-center">UPLOAD IMAGE(S)</h1>
+      <form method="post" enctype="multipart/form-data" action="/upload" class="flex flex-col items-center">
+        <input type="file" name="file" class="mb-4">
+        <br>
+        <input type="submit" value="Upload" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+      </form>
+    </div>
+  </body>
+</html>
